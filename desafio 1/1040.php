@@ -1,10 +1,9 @@
 <?php
 
-list($n1, $n2, $n3, $n4) = array_map('floatval', explode(' ', trim(fgets(STDIN))));
+list($n1, $n2, $n3, $n4) = explode(' ', trim(fgets(STDIN)));
 
 $media = (($n1 * 2) + ($n2 * 3) + ($n3 * 4) + ($n4 * 1)) / 10;
-
-echo "Media:" . number_format($media, 1, '.', '') . PHP_EOL;
+echo "Media: " . number_format($media, 1, '.', '') . PHP_EOL;
 
 if ($media >= 7.0) {
     echo "Aluno aprovado." . PHP_EOL;;
