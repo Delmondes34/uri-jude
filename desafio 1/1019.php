@@ -1,14 +1,13 @@
 <?php
 
 $segundo = intval(fgets(STDIN));
-$minuto = intval($segundo , 60);
-$minuto = max (60);
-$minuto -= $segundo * 60;
-$minuto = floor($minuto); 
-$hora = ($segundo / 60) / 60;
-$hora = round($hora);
 
-number_format($segundo, 2);
-number_format($minuto, 2);
+$hours = floor($segundo / 3600);
 
-echo "$hora:$minuto:$segundo\n";
+$remainingSeconds = $segundo % 3600;
+
+$minutes = floor($remainingSeconds / 60);
+
+$seconds = $remainingSeconds % 60;
+
+echo "{$hours}:{$minutes}:{$seconds}\n";
