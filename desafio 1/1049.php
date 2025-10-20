@@ -8,29 +8,28 @@ if ($type == "vertebrado") {
     if ($class == "ave") {
         if ($diet == "carnivoro") {
             echo "aguia\n";
-        } else { // onivoro
+        } else {
             echo "pomba\n";
         }
-    } else { // mamifero
+    } else {
         if ($diet == "onivoro") {
             echo "homem\n";
-        } else { // herbivoro
+        } else {
             echo "vaca\n";
         }
     }
-} else { // invertebrado
+} else {
     if ($class == "inseto") {
         if ($diet == "hematofago") {
             echo "pulga\n";
-        } else { // herbivoro
+        } else {
             echo "lagarta\n";
         }
-    } else { // anelideo
+    } else {
         if ($diet == "hematofago") {
             echo "sanguessuga\n";
-        } else { // onivoro
+        } else {
             echo "minhoca\n";
         }
     }
 }
-
